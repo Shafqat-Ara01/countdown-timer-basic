@@ -1,5 +1,4 @@
-const targetTime= Date.now() + 1 * 60 * 1000;//1min=>60sec=> 1sec=1000milisec  so 2*60*1000  
-
+const targetTime= Date.now() + 1 * 60 * 1000;//1min=>60sec=> 1sec=1000milisec  
 const timer= document.querySelector("#timer");
 let intervalId;
 function updateTime(){
@@ -22,4 +21,5 @@ timer.textContent= `${String(minutes).padStart(2, "0")} : ${String(sec).padStart
 }
 
 updateTime();
+
  intervalId= setInterval(updateTime, 1000);
